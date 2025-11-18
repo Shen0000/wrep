@@ -85,15 +85,7 @@ cargo test --test cli
 - [`src/lib.rs`](src/lib.rs) - Core pattern matching logic
 - [`tests/cli.rs`](tests/cli.rs) - Integration tests
 
-## Dependencies
-
-- `clap` - Command-line argument parsing
-- `anyhow` - Error handling
 
 ## License
 
 MIT
-
-## Author
-
-Brendan Shen (bshen.324@gmail.com)
