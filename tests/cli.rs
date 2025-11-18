@@ -1,5 +1,6 @@
 use assert_cmd::cargo::*; // Import cargo_bin_cmd! macro and methods
 use predicates::prelude::*; // Used for writing assertions
+use assert_fs::prelude::*;
 
 #[test]
 fn file_doesnt_exist() -> Result<(), Box<dyn std::error::Error>> {
@@ -12,7 +13,6 @@ fn file_doesnt_exist() -> Result<(), Box<dyn std::error::Error>> {
 
     Ok(())
 }
-
 
 #[test]
 fn find_content_in_file() -> Result<(), Box<dyn std::error::Error>> {
